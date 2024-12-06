@@ -1,0 +1,141 @@
+* {
+    margin:0px;
+    padding: 0px;
+}
+body {
+    min-height: 100vh;
+    background-color: rgb(247, 197, 104);
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-size: cover;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+nav li {
+    height: 50px;
+}
+nav a {
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    color: black;
+}
+nav a:hover {
+    background-color: #f0f0f0;
+}
+nav li:first-child {
+    margin-right: auto;
+}
+.menu-btn {
+    display: flex;
+}
+.sidebar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.438);
+    box-shadow: -10px 0px 5px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.sidebar li {
+    width: 100%;
+}
+.menu-btn {
+    display: none;
+}
+
+/* About Us  start */
+.about-us {
+    width: 100%;
+}
+.about-us .about-title {
+    text-align: center;
+    padding: 40px 0px 40px 0px;
+}
+.about-us .about-title h2 span {
+    border-bottom: 5px solid red;
+}
+.about-us .img-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.about-us .img-content .img {
+    width: 50%;
+}
+.about-us .img-content .img img {
+    width: 80%;
+    object-fit: contain;
+}
+.about-us .img-content .img img:hover {
+    transform: scaleX(-1);
+}
+.about-us .img-content .content {
+    width: 50%;
+    background-color: white;
+    margin: 60px;
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.5);
+    transition: all 250ms ease;
+}
+.about-us .img-content .content h2 {
+    font-size: 40px;
+}
+.about-us .img-content .content:hover {
+    box-shadow: none;
+    transform: translateX(5px);
+}
+/* About Us end */
+
+
+
+@media only screen and (max-width:790px){
+    .menu-btn {
+        display: block;
+    }
+    .hidemobileview {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width:490px){
+    .sidebar {
+        width: 100%;
+    }
+
+    
+    
+}
+
+/* ABOUT US */
+/* start up */
+
+.body {
+    min-height: 100vh;
+    background-color: rgb(170, 74, 222);
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-size: cover;
+}
